@@ -2,6 +2,8 @@ package edu.ktu.ds.lab3.utils;
 
 import java.util.Arrays;
 
+import static java.util.Objects.hash;
+
 /**
  * Porų ("maping'ų") raktas-reikšmė objektų kolekcijos - atvaizdžio realizacija
  * maišos lentele, kolizijas sprendžiant atskirų grandinėlių (angl. separate
@@ -172,6 +174,26 @@ public class HashMap<K, V> implements EvaluableMap<K, V> {
         return node == null ? null : node.value;
     }
 
+    public int hash(K key, HashManager.HashType hashType) {
+        int h = key.hashCode();
+        switch (hashType) {
+            case DIVISION:
+                return Math.abs(h) % table.length;
+            case MULTIPLICATION:
+                double k = (Math.sqrt(5) - 1) / 2;
+                return (int) (((k * Math.abs(h)) % 1) * table.length);
+            case JCF7:
+                h ^= (h >>> 20) ^ (h >>> 12);
+                h = h ^ (h >>> 7) ^ (h >>> 4);
+                return h & (table.length - 1);
+            case JCF8:
+                h = h ^ (h >>> 16);
+                return h & (table.length - 1);
+            default:
+                return Math.abs(h) % table.length;
+        }
+    }
+
     /**
      * Pora pašalinama iš atvaizdžio.
      *
@@ -180,7 +202,31 @@ public class HashMap<K, V> implements EvaluableMap<K, V> {
      */
     @Override
     public V remove(K key) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti remove(K key)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti remove(K key)");
+        int index = HashManager.hash(key.hashCode(), table.length, ht);
+
+        if (key == null) {
+            throw new IllegalArgumentException("Key is null in remove(Key key)");
+        }
+        index = hash(key, ht);
+        Node<K, V> previous = null;
+        for (Node<K, V> n = table[index]; n != null; n = n.next) {
+            if ((n.key).equals(key)) {
+                if (previous == null) {
+                    table[index] = n.next;
+                } else {
+                    previous.next = n.next;
+                }
+                size--;
+
+                if (table[index] == null) {
+                    chainsCounter--;
+                }
+                return n.value;
+            }
+            previous = n;
+        }
+        return null;
     }
 
     /**
@@ -237,11 +283,49 @@ public class HashMap<K, V> implements EvaluableMap<K, V> {
     }
 
     public boolean replace(K key, V oldValue, V newValue) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti replace(K key,  V oldValue, V newValue)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti replace(K key,  V oldValue, V newValue)");
+        int index = HashManager.hash(key.hashCode(), table.length, ht);
+//        index = hash(key, ht);
+        if (table[index] == null) {
+            return false;
+        }
+
+        Node<K, V> node = getInChain(key, table[index]);
+        if (node.value.equals(oldValue)) {
+            node.value = newValue;
+            return true;
+        } else {
+            while (node != null) {
+                if (node.value.equals(oldValue)) {
+                    node.value = newValue;
+                    return true;
+                }
+                node = node.next;
+            }
+        }
+        return false;
     }
 
     public boolean containsValue(Object value) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti containsValue(Object value)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti containsValue(Object value)");
+        if (value == null) {
+            throw new NullPointerException("Null pointer in containsValue(Object value)");
+        }
+        for (int i = 0; i < table.length; i++) {
+            if (table[i] != null) {
+                if (table[i].value == value) {
+                    return true;
+                }
+                Node<K, V> elem = table[i];
+                while (elem.next != null) {
+                    elem = elem.next;
+                    if (elem.value == value) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     /**
