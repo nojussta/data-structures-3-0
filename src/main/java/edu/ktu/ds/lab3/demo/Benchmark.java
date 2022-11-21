@@ -21,7 +21,7 @@ import static edu.ktu.ds.lab3.utils.HashMapOa.DEFAULT_LOAD_FACTOR;
 @BenchmarkMode(Mode.AverageTime)
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
-@Warmup(time = 1, timeUnit = TimeUnit.SECONDS)
+//@Warmup(time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(time = 1, timeUnit = TimeUnit.SECONDS)
 public class Benchmark {
 
@@ -76,25 +76,19 @@ public class Benchmark {
         return new ArrayList<>(CarsGenerator.generateShuffleCars(count));
     }
 
-    //@org.openjdk.jmh.annotations.Benchmark
+//    @org.openjdk.jmh.annotations.Benchmark
     public Map<String, Car> putMap() {
         Map<String, Car> carsMap = new HashMap<>(HashManager.HashType.DIVISION);
         putMappings(ids, cars, carsMap);
         return carsMap;
     }
 
-    //@org.openjdk.jmh.annotations.Benchmark
+//    @org.openjdk.jmh.annotations.Benchmark
     public void removeCarMap(FullMap fullMap) {
         fullMap.ids.forEach(id -> fullMap.carsMap.remove(id));
     }
 
     public static void putMappings(List<String> ids, List<Car> cars, Map<String, Car> carsMap) {
-        for (int i = 0; i < cars.size(); i++) {
-            carsMap.put(ids.get(i), cars.get(i));
-        }
-    }
-
-    public static void putMappings(List<String> ids, List<Car> cars, java.util.HashMap<String, Car> carsMap) {
         for (int i = 0; i < cars.size(); i++) {
             carsMap.put(ids.get(i), cars.get(i));
         }
@@ -107,12 +101,12 @@ public class Benchmark {
         }
     }
 
-    @org.openjdk.jmh.annotations.Benchmark
-    public void containsValuesHashMapOa(FullMap fullMap) {
-        for (int i = 0; i < cars.size(); i++) {
-            fullMap.carsMapOa.containsValue(cars.get(i));
-        }
-    }
+//    @org.openjdk.jmh.annotations.Benchmark
+//    public void containsValuesHashMapOa(FullMap fullMap) {
+//        for (int i = 0; i < cars.size(); i++) {
+//            fullMap.carsMapOa.containsValue(cars.get(i));
+//        }
+//    }
 
 
     public static void main(String[] args) throws RunnerException {
