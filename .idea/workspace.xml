@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-hashMap-hashManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/Lab3_MaisosLenteles",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/IdeaProjects/Lab3_MaisosLenteles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\BG\Downloads\Lab3_MaisosLenteles2021_1010\Lab3_MaisosLenteles_Draft\src\main\java\edu\ktu\ds\lab3" />
@@ -79,7 +81,7 @@
       <recent name="edu.ktu.ds.lab3.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManualTest">
+  <component name="RunManager" selected="Application.Benchmark">
     <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ktu.ds.lab3.demo.Benchmark" />
       <module name="Lab3_MaisosLenteles" />
@@ -156,9 +158,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Benchmark" />
         <item itemvalue="Application.ManualTest" />
         <item itemvalue="Application.DemoExecution" />
-        <item itemvalue="Application.Benchmark" />
         <item itemvalue="JUnit.ExampleTests" />
         <item itemvalue="Application.DemoExecutionSwing" />
       </list>
@@ -172,7 +174,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602953696498</updated>
-      <workItem from="1668504621444" duration="1438000" />
+      <workItem from="1668504621444" duration="1467000" />
+      <workItem from="1669039833299" duration="5178000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -180,7 +183,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1668505761537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="upd/update-hashMap-hashManager">
+      <created>1668506079104</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1668506079104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

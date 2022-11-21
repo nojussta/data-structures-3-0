@@ -163,7 +163,15 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
 
     @Override
     public V remove(K key) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti remove(K key)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti remove(K key)");
+        int position = findPosition(key, false);
+        if (position != -1 && table[position] != null && table[position] != DELETED) {
+            V holder = table[position].value;
+            table[position] = DELETED;
+            size--;
+            return holder;
+        }
+        return null;
     }
 
     @Override
@@ -256,11 +264,29 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
     }
 
     public boolean replace(K key, V oldValue, V newValue) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti replace(K key,  V oldValue, V newValue)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti replace(K key,  V oldValue, V newValue)");
+        int position = findPosition(key, false);
+        if (position != -1 && table[position] != null && table[position] != DELETED && table[position].value == oldValue) {
+            table[position].value = newValue;
+            return true;
+        }
+        return false;
     }
 
     public boolean containsValue(Object value) {
-        throw new UnsupportedOperationException("Studentams reikia realizuoti containsValue(Object value)");
+//        throw new UnsupportedOperationException("Studentams reikia realizuoti containsValue(Object value)");
+        if (value == null) {
+            throw new NullPointerException("Null pointer in put");
+        }
+
+        for (int i = 0; i < table.length; i++) {
+            if (table[i] != null) {
+                if (table[i].value.equals(value)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     protected static class Entry<K, V> {

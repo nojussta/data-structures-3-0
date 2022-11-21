@@ -12,6 +12,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @BenchmarkMode(Mode.AverageTime)
@@ -38,6 +39,7 @@ public class Benchmark {
         public void fillCarMap(BenchmarkParams params) {
             carsMap = new HashMap<>(HashManager.HashType.DIVISION);
             putMappings(ids, cars, carsMap);
+//            containsValue();
         }
     }
 
@@ -61,14 +63,14 @@ public class Benchmark {
         return new ArrayList<>(CarsGenerator.generateShuffleCars(count));
     }
 
-    @org.openjdk.jmh.annotations.Benchmark
+    //@org.openjdk.jmh.annotations.Benchmark
     public Map<String, Car> putMap() {
         Map<String, Car> carsMap = new HashMap<>(HashManager.HashType.DIVISION);
         putMappings(ids, cars, carsMap);
         return carsMap;
     }
 
-    @org.openjdk.jmh.annotations.Benchmark
+    //@org.openjdk.jmh.annotations.Benchmark
     public void removeCarMap(FullMap fullMap) {
         fullMap.ids.forEach(id -> fullMap.carsMap.remove(id));
     }
@@ -77,6 +79,11 @@ public class Benchmark {
         for (int i = 0; i < cars.size(); i++) {
             carsMap.put(ids.get(i), cars.get(i));
         }
+    }
+
+    @org.openjdk.jmh.annotations.Benchmark
+    public static void containsValueLib(){
+        Map<String, Car> carsMap = new HashMap<>(HashManager.HashType.DIVISION);
     }
 
     public static void main(String[] args) throws RunnerException {
