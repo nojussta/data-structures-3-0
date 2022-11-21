@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-hashMap-hashManager">
+    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-hashMap-hashMapOa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark$FullMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark$FullMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602953696498</updated>
       <workItem from="1668504621444" duration="1467000" />
-      <workItem from="1669039833299" duration="5178000" />
+      <workItem from="1669039833299" duration="8985000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -189,7 +195,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1668506079104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="upd/update-hashMap-hashMapOa">
+      <created>1669045031266</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1669045031266</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +220,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upd/update-hashMap-hashManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd/update-hashMap-hashManager" />
+    <MESSAGE value="upd/update-hashMap-hashMapOa" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd/update-hashMap-hashMapOa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
