@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-benchmark-v1">
+    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-task-method-tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/ManualTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/ManualTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +178,8 @@
       <workItem from="1669050424788" duration="1296000" />
       <workItem from="1669052137335" duration="2656000" />
       <workItem from="1669055100867" duration="2230000" />
-      <workItem from="1669117604799" duration="2609000" />
+      <workItem from="1669117604799" duration="2715000" />
+      <workItem from="1669123340174" duration="12000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -214,7 +211,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1669051713223</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="upd/update-task-method-tests">
+      <created>1669120265795</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1669120265795</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +239,8 @@
     <MESSAGE value="upd/update-hashMap-hashMapOa" />
     <MESSAGE value="upd/update-benchmark" />
     <MESSAGE value="upd/update-benchmark-v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd/update-benchmark-v1" />
+    <MESSAGE value="upd/update-task-method-tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd/update-task-method-tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
