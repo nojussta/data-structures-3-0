@@ -328,6 +328,36 @@ public class HashMap<K, V> implements EvaluableMap<K, V> {
         return false;
     }
 
+    public V replace(K key, V value) {
+        if (key == null || value == null) {
+            throw new IllegalArgumentException("Key or value is null in replace(Key key, Value value)");
+        }
+
+        int index = hash(key, ht);
+        if (table[index] == null) {
+            chainsCounter++;
+        }
+
+        Node<K, V> node = getInChain(key, table[index]);
+
+        if (node == null) {
+            table[index] = new Node<>(key, value, table[index]);
+            size++;
+
+            if (size > table.length * loadFactor) {
+                rehash();
+            } else {
+                lastUpdatedChain = index;
+            }
+            return null;
+        } else {
+            V oldValue = node.value;
+            node.value = value;
+            lastUpdatedChain = index;
+            return oldValue;
+        }
+    }
+
     /**
      * Grąžina maksimalų grandinėlės ilgį.
      *
