@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-benchmark">
+    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-benchmark-v1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" afterDir="false" />
@@ -83,7 +84,7 @@
       <recent name="edu.ktu.ds.lab3.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Benchmark">
+  <component name="RunManager" selected="Application.ManualTest">
     <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ktu.ds.lab3.demo.Benchmark" />
       <module name="Lab3_MaisosLenteles" />
@@ -160,8 +161,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Benchmark" />
         <item itemvalue="Application.ManualTest" />
+        <item itemvalue="Application.Benchmark" />
         <item itemvalue="Application.DemoExecution" />
         <item itemvalue="JUnit.ExampleTests" />
         <item itemvalue="Application.DemoExecutionSwing" />
@@ -178,7 +179,10 @@
       <updated>1602953696498</updated>
       <workItem from="1668504621444" duration="1467000" />
       <workItem from="1669039833299" duration="9042000" />
-      <workItem from="1669050424788" duration="1275000" />
+      <workItem from="1669050424788" duration="1296000" />
+      <workItem from="1669052137335" duration="2656000" />
+      <workItem from="1669055100867" duration="2230000" />
+      <workItem from="1669117604799" duration="2609000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -204,7 +208,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1669050395710</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="upd/update-benchmark-v1">
+      <created>1669051713223</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1669051713223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +235,8 @@
     <MESSAGE value="upd/update-hashMap-hashManager" />
     <MESSAGE value="upd/update-hashMap-hashMapOa" />
     <MESSAGE value="upd/update-benchmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd/update-benchmark" />
+    <MESSAGE value="upd/update-benchmark-v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd/update-benchmark-v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,11 +245,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/gui/MainWindow.java</url>
           <line>456</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

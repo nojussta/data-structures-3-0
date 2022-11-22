@@ -21,7 +21,7 @@ import static edu.ktu.ds.lab3.utils.HashMapOa.DEFAULT_LOAD_FACTOR;
 @BenchmarkMode(Mode.AverageTime)
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
-//@Warmup(time = 1, timeUnit = TimeUnit.SECONDS)
+@Warmup(time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(time = 1, timeUnit = TimeUnit.SECONDS)
 public class Benchmark {
 
@@ -94,19 +94,19 @@ public class Benchmark {
         }
     }
 
-    @org.openjdk.jmh.annotations.Benchmark
-    public void containsValuesHashMap(FullMap fullMap) {
-        for (int i = 0; i < cars.size(); i++) {
-            fullMap.carsMapH.containsValue(cars.get(i));
-        }
-    }
-
 //    @org.openjdk.jmh.annotations.Benchmark
-//    public void containsValuesHashMapOa(FullMap fullMap) {
+//    public void containsValuesHashMap(FullMap fullMap) {
 //        for (int i = 0; i < cars.size(); i++) {
-//            fullMap.carsMapOa.containsValue(cars.get(i));
+//            fullMap.carsMapH.containsValue(cars.get(i));
 //        }
 //    }
+
+    @org.openjdk.jmh.annotations.Benchmark
+    public void containsValuesHashMapOa(FullMap fullMap) {
+        for (int i = 0; i < cars.size(); i++) {
+            fullMap.carsMapOa.containsValue(cars.get(i));
+        }
+    }
 
 
     public static void main(String[] args) throws RunnerException {

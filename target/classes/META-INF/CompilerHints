@@ -5,5 +5,5 @@ dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,edu/ktu/ds/lab3/demo/Benchmark$FullMap.fillCarMap
 inline,edu/ktu/ds/lab3/demo/Benchmark$FullMap.generateIdsAndCars
-inline,edu/ktu/ds/lab3/demo/Benchmark.containsValuesHashMap
+inline,edu/ktu/ds/lab3/demo/Benchmark.containsValuesHashMapOa
 inline,edu/ktu/ds/lab3/demo/Benchmark.generateIdsAndCars

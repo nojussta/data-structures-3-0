@@ -33,6 +33,8 @@ public class ManualTest {
     }
 
     private static void executeCarMapTests(String[] carsIds, Car[] cars) {
+        Ks.out("========================HASHMAP========================" + '\n');
+
         ParsableMap<String, Car> carsMap = new ParsableHashMap<>(
                 String::new,
                 Car::new,
@@ -58,9 +60,22 @@ public class ManualTest {
         Ks.oun(carsMap.get(carsIds[7]));
         Ks.oun("Išspausdiname atvaizdžio poras String eilute:");
         Ks.ounn(carsMap);
+        Ks.oun("Ištriname 3 atvaizda:");
+        Ks.oun(carsMap.remove(carsIds[3]));
+        Ks.oun("Išspausdiname 3 atvaizda:");
+        Ks.oun(carsMap.get(carsIds[3]));
+        Ks.oun("Išspausdiname 2 atvaizda prieš replacementą:");
+        Ks.oun(carsMap.get(carsIds[2]));
+        carsMap.replace(carsIds[2], cars[2], cars[4]);
+        Ks.oun("Išspausdiname 4 atvaizda:");
+        Ks.oun(carsMap.get(carsIds[4]));
+        Ks.oun("Išspausdiname 2 atvaizda:");
+        Ks.oun(carsMap.get(carsIds[2]));
+        Ks.ounn(carsMap);
     }
 
     private static void executeCarMapOaTests(String[] carsIds, Car[] cars) {
+        Ks.out("========================HASHMAP OA========================" + '\n');
         ParsableMap<String, Car> carsMapOa = new ParsableHashMapOa<>(
                 String::new,
                 Car::new,
@@ -86,6 +101,18 @@ public class ManualTest {
         Ks.oun(carsMapOa.get(carsIds[2]));
         Ks.oun(carsMapOa.get(carsIds[7]));
         Ks.oun("Išspausdiname atviros adresacijos atvaizdžio poras String eilute:");
+        Ks.ounn(carsMapOa);
+        Ks.oun("Ištriname 3 atvaizda:");
+        Ks.oun(carsMapOa.remove(carsIds[3]));
+        Ks.oun("Išspausdiname 3 atvaizda:");
+        Ks.oun(carsMapOa.get(carsIds[3]));
+        Ks.oun("Išspausdiname 2 atvaizda prieš replacementą:");
+        Ks.oun(carsMapOa.get(carsIds[2]));
+        carsMapOa.replace(carsIds[2], cars[2], cars[4]);
+        Ks.oun("Išspausdiname 4 atvaizda:");
+        Ks.oun(carsMapOa.get(carsIds[4]));
+        Ks.oun("Išspausdiname 2 atvaizda:");
+        Ks.oun(carsMapOa.get(carsIds[2]));
         Ks.ounn(carsMapOa);
     }
 }
