@@ -15,9 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static edu.ktu.ds.lab3.utils.HashMapOa.DEFAULT_INITIAL_CAPACITY;
-import static edu.ktu.ds.lab3.utils.HashMapOa.DEFAULT_LOAD_FACTOR;
-
 @BenchmarkMode(Mode.AverageTime)
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
@@ -32,7 +29,6 @@ public class Benchmark {
         List<Car> cars;
         HashMap<String, Car> carsMap;
 
-        HashMap<String, Car> carsMapH;
         HashMapOa<String, Car> carsMapOa;
 
         @Setup(Level.Iteration)
@@ -43,20 +39,15 @@ public class Benchmark {
 
         @Setup(Level.Invocation)
         public void fillCarMap(BenchmarkParams params) {
-//            carsMap = new HashMap<>(HashManager.HashType.DIVISION);
-            carsMapOa = new HashMapOa<>(
-                    DEFAULT_INITIAL_CAPACITY,
-                    DEFAULT_LOAD_FACTOR,
-                    HashManager.HashType.DIVISION,
-                    HashMapOa.OpenAddressingType.DOUBLE_HASHING
-            );
-            carsMapH = new HashMap<>();
-            putMappings(ids, cars, carsMapOa);
-            putMappings(ids, cars, carsMapH);
+            carsMap = new HashMap<>(HashManager.HashType.DIVISION);
+            putMappings(ids, cars, carsMap);
+            carsMapOa = new HashMapOa<>(HashManager.HashType.DIVISION);
+            putMappingsOa(ids, cars, carsMapOa);
         }
+
     }
 
-    @Param({"10000", "20000", "40000", "80000"})
+    @Param({"5000", "10000", "20000", "60000"})
     public int elementCount;
 
     List<String> ids;
@@ -77,15 +68,13 @@ public class Benchmark {
     }
 
 //    @org.openjdk.jmh.annotations.Benchmark
-    public Map<String, Car> putMap() {
-        Map<String, Car> carsMap = new HashMap<>(HashManager.HashType.DIVISION);
-        putMappings(ids, cars, carsMap);
-        return carsMap;
-    }
+//    public void containsValueHashMap(FullMap fullMap) {
+//        fullMap.ids.forEach(id -> fullMap.carsMap.containsValue(id));
+//    }
 
-//    @org.openjdk.jmh.annotations.Benchmark
-    public void removeCarMap(FullMap fullMap) {
-        fullMap.ids.forEach(id -> fullMap.carsMap.remove(id));
+    @org.openjdk.jmh.annotations.Benchmark
+    public void containsValueHashMapOa(FullMap fullMap) {
+        fullMap.ids.forEach(id -> fullMap.carsMapOa.containsValue(id));
     }
 
     public static void putMappings(List<String> ids, List<Car> cars, Map<String, Car> carsMap) {
@@ -94,20 +83,11 @@ public class Benchmark {
         }
     }
 
-    @org.openjdk.jmh.annotations.Benchmark
-    public void containsValuesHashMap(FullMap fullMap) {
+    public static void putMappingsOa(List<String> ids, List<Car> cars, Map<String, Car> carsMapOa) {
         for (int i = 0; i < cars.size(); i++) {
-            fullMap.carsMapH.containsValue(cars.get(i));
+            carsMapOa.put(ids.get(i), cars.get(i));
         }
     }
-
-//    @org.openjdk.jmh.annotations.Benchmark
-//    public void containsValuesHashMapOa(FullMap fullMap) {
-//        for (int i = 0; i < cars.size(); i++) {
-//            fullMap.carsMapOa.containsValue(cars.get(i));
-//        }
-//    }
-
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
