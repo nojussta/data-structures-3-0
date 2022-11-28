@@ -79,4 +79,6 @@ public interface Map<K, V> {
      * @return true, jei atvaizdyje egzistuoja vienas ar daugiau raktų metodo argumente nurodytai reikšmei
      */
     boolean containsValue(Object value);
+
+    V replace(K key, V value);
 }

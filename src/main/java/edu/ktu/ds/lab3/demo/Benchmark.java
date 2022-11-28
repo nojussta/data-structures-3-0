@@ -94,19 +94,19 @@ public class Benchmark {
         }
     }
 
-//    @org.openjdk.jmh.annotations.Benchmark
-//    public void containsValuesHashMap(FullMap fullMap) {
-//        for (int i = 0; i < cars.size(); i++) {
-//            fullMap.carsMapH.containsValue(cars.get(i));
-//        }
-//    }
-
     @org.openjdk.jmh.annotations.Benchmark
-    public void containsValuesHashMapOa(FullMap fullMap) {
+    public void containsValuesHashMap(FullMap fullMap) {
         for (int i = 0; i < cars.size(); i++) {
-            fullMap.carsMapOa.containsValue(cars.get(i));
+            fullMap.carsMapH.containsValue(cars.get(i));
         }
     }
+
+//    @org.openjdk.jmh.annotations.Benchmark
+//    public void containsValuesHashMapOa(FullMap fullMap) {
+//        for (int i = 0; i < cars.size(); i++) {
+//            fullMap.carsMapOa.containsValue(cars.get(i));
+//        }
+//    }
 
 
     public static void main(String[] args) throws RunnerException {

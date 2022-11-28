@@ -29,7 +29,7 @@ public class ManualTest {
         Car[] cars = {car1, car2, car3, car4, car5, car6, car7};
 
         executeCarMapTests(carsIds, cars);
-        executeCarMapOaTests(carsIds, cars);
+        //executeCarMapOaTests(carsIds, cars);
     }
 
     private static void executeCarMapTests(String[] carsIds, Car[] cars) {
@@ -72,6 +72,8 @@ public class ManualTest {
         Ks.oun("Išspausdiname 2 atvaizda:");
         Ks.oun(carsMap.get(carsIds[2]));
         Ks.ounn(carsMap);
+
+        Ks.ounn("New replace test:" + "\n" + carsMap.replace(carsIds[1], cars[3]));
     }
 
     private static void executeCarMapOaTests(String[] carsIds, Car[] cars) {

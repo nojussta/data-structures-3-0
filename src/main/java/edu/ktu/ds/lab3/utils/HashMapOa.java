@@ -147,6 +147,18 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
         return value;
     }
 
+    public Entry<K, V> getEntry(K key, int position) {
+        if (key == null) {
+            throw new IllegalArgumentException("Key is null in get(K key)");
+        }
+
+        if (position != -1 && table[position] != null && table[position] != DELETED) {
+            return table[position];
+        }
+
+        return null;
+    }
+
     @Override
     public V get(K key) {
         if (key == null) {
@@ -165,13 +177,15 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
     public V remove(K key) {
 //        throw new UnsupportedOperationException("Studentams reikia realizuoti remove(K key)");
         int position = findPosition(key, false);
+        V removedValue = null;
         if (position != -1 && table[position] != null && table[position] != DELETED) {
-            V holder = table[position].value;
+            removedValue = table[position].value;
+            lastUpdated = position;
+            numberOfOccupied--;
             table[position] = DELETED;
             size--;
-            return holder;
         }
-        return null;
+        return removedValue;
     }
 
     @Override
@@ -266,8 +280,10 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
     public boolean replace(K key, V oldValue, V newValue) {
 //        throw new UnsupportedOperationException("Studentams reikia realizuoti replace(K key,  V oldValue, V newValue)");
         int position = findPosition(key, false);
-        if (position != -1 && table[position] != null && table[position] != DELETED && table[position].value == oldValue) {
-            table[position].value = newValue;
+        Entry<K, V> entry = getEntry(key, position);
+        if (entry != null && (oldValue == null || oldValue.equals(entry.value))) {
+            entry.value = newValue;
+            lastUpdated = position;
             return true;
         }
         return false;
@@ -275,18 +291,15 @@ public class HashMapOa<K, V> implements EvaluableMap<K, V> {
 
     public boolean containsValue(Object value) {
 //        throw new UnsupportedOperationException("Studentams reikia realizuoti containsValue(Object value)");
-        if (value == null) {
-            throw new NullPointerException("Null pointer in put");
-        }
-
-        for (int i = 0; i < table.length; i++) {
-            if (table[i] != null) {
-                if (table[i].value.equals(value)) {
-                    return true;
-                }
-            }
-        }
+        for (int entryIndex = 0; entryIndex < getTableCapacity(); entryIndex++)
+            if (table[entryIndex] != null && table[entryIndex].value.equals(value))
+                return true;
         return false;
+    }
+
+    @Override
+    public V replace(K key, V value) {
+        return null;
     }
 
     protected static class Entry<K, V> {

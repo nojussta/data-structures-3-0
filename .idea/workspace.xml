@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-task-method-tests">
+    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-other-methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/ManualTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/HashMapOa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/utils/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/ManualTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/ManualTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMap$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMap$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/Map.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/Lab3_MaisosLenteles",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/IdeaProjects/Lab3_MaisosLenteles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\BG\Downloads\Lab3_MaisosLenteles2021_1010\Lab3_MaisosLenteles_Draft\src\main\java\edu\ktu\ds\lab3" />
@@ -80,7 +90,7 @@
       <recent name="edu.ktu.ds.lab3.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManualTest">
+  <component name="RunManager" selected="Application.Benchmark">
     <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ktu.ds.lab3.demo.Benchmark" />
       <module name="Lab3_MaisosLenteles" />
@@ -157,8 +167,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ManualTest" />
         <item itemvalue="Application.Benchmark" />
+        <item itemvalue="Application.ManualTest" />
         <item itemvalue="Application.DemoExecution" />
         <item itemvalue="JUnit.ExampleTests" />
         <item itemvalue="Application.DemoExecutionSwing" />
@@ -180,7 +190,8 @@
       <workItem from="1669055100867" duration="2230000" />
       <workItem from="1669117604799" duration="2715000" />
       <workItem from="1669123340174" duration="1322000" />
-      <workItem from="1669126664915" duration="18000" />
+      <workItem from="1669126664915" duration="2348000" />
+      <workItem from="1669635684288" duration="381000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -224,7 +235,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1669123381163</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="upd/update-other-methods">
+      <created>1669126698779</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1669126698779</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +264,8 @@
     <MESSAGE value="upd/update-benchmark" />
     <MESSAGE value="upd/update-benchmark-v1" />
     <MESSAGE value="upd/update-task-method-tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd/update-task-method-tests" />
+    <MESSAGE value="upd/update-other-methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd/update-other-methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
