@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-hashmap-hashmapoa">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ktu/ds/lab3/demo/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/demo/Benchmark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/ktu/ds/lab3/utils/HashMapOa$1.class" afterDir="false" />
-    </list>
+    <list default="true" id="600a0afc-57ce-41ba-b7b6-9573d99cf7e5" name="Default Changelist" comment="upd/update-hashmap-hashmapoa-benchmark" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,13 +35,16 @@
     <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1j0vCQu7gKZdWYHYFkSI8xGMGcc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -189,7 +185,7 @@
       <workItem from="1669635684288" duration="495000" />
       <workItem from="1669636259881" duration="1407000" />
       <workItem from="1669645858984" duration="78000" />
-      <workItem from="1669647828715" duration="6323000" />
+      <workItem from="1669647828715" duration="6367000" />
     </task>
     <task id="LOCAL−00001" summary="upd/update-hashMap-hashManager">
       <created>1668505761536</created>
@@ -245,7 +241,19 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1669636123910</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="upd/update-hashmap-hashmapoa-benchmark">
+      <created>1669655266479</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1669655266479</updated>
+    </task>
+    <task id="LOCAL−00011" summary="upd/update-hashmap-hashmapoa-benchmark">
+      <created>1669655288293</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1669655288293</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +271,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="upd/update-hashMap-hashManager" />
     <MESSAGE value="upd/update-hashMap-hashMapOa" />
     <MESSAGE value="upd/update-benchmark" />
@@ -270,7 +279,8 @@
     <MESSAGE value="upd/update-task-method-tests" />
     <MESSAGE value="upd/update-other-methods" />
     <MESSAGE value="upd/update-hashmap-hashmapoa" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd/update-hashmap-hashmapoa" />
+    <MESSAGE value="upd/update-hashmap-hashmapoa-benchmark" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd/update-hashmap-hashmapoa-benchmark" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
